@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+        <label for="flavor">Choose a flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="pineapple">Pineapple</option>
+        </select><br><br>
+
+        <label for="base">Choose a base:</label>
+        <select id="base" name="base">
+            <option value="milk">Milk</option>
+            <option value="yogurt">Yogurt</option>
+            <option value="coconut water">Coconut Water</option>
+            <option value="fruit juice">Fruit Juice</option>
+        </select><br><br>
+
+        <label for="extras">Add extras (hold Ctrl to select multiple):</label><br>
+        <select id="extras" name="extras" multiple>
+            <option value="protein powder">Protein Powder</option>
+            <option value="spinach">Spinach</option>
+            <option value="kale">Kale</option>
+            <option value="chia seeds">Chia Seeds</option>
+        </select><br><br>
+
+        <label for="sweetener">Choose a sweetener:</label>
+        <input type="radio" id="honey" name="sweetener" value="honey">
+        <label for="honey">Honey</label>
+        <input type="radio" id="sugar" name="sweetener" value="sugar">
+        <label for="sugar">Sugar</label>
+        <input type="radio" id="agave" name="sweetener" value="agave">
+        <label for="agave">Agave</label><br><br>
+
+        <label for="comments">Any additional comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" onclick="createSmoothie()">Order Smoothie</button>
+    </form>
+
+    <div id="smoothieDescription"></div>
+
+   
+</body>
+</html>
